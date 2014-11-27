@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewControllers.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    //rootControllerのインスタンス変数の作成
+    UIWindow* window;
+    UINavigationController *naviController;
+    UIViewController* rootController_;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
